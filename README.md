@@ -1,2 +1,2 @@
 # FNAF1
- All Credits To Scott Cawthon, I 100% Understand if you want this to be taken down.
+The original Five Nights At Freddy's, decompiled, then recompiled for HTML5.

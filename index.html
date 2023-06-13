@@ -6,8 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style type="text/css">
-html {height: 100%;}
+html {width: 100%; height: 100%;}
 body {
+    overflow: hidden:
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background: rgb(19 19 19);
@@ -35,21 +36,6 @@ p {
 	left: 50%;
 	width: 600px;
 	margin-left: -260px
-}
-#wrapper {
-	padding: 10px;
-	margin: 0 auto;
-}
-#border {
-	background-color: #363535;
-	border: 1px solid #6e6e6e;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	margin: 0 auto;
-	padding: 5px;
-	width:1280px;
-	height:720px;
 }
 
 #canvas {
@@ -82,15 +68,11 @@ p {
 
 <!-- This is where we create the Canvas element that will contain the application...-->
 <body>
-    <div id="wrapper">
-	    <div id="border">
-		    <div id="canvas">
-			    <canvas id="MMFCanvas" width="1280" height="720">
-				    <p>Your browser does not support Canvas.</p>
-			    </canvas>   
-		    </div>
-	    </div>
-    </div>  
+    <div style="display: inline-block; -webkit-user-select: none; text-align: left; width: 100%; height: 100%; margin: 0;">
+        <canvas id="MMFCanvas" width="1280" height="720">
+    	   Your browser does not support Canvas.
+        </canvas>
+    </div>
     <script>
         // RUNTIMESTART
 	    // This is where the HTML5 runtime is actually started
